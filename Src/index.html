@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Yasser Ahmed Mogahed — Data Scientist & BI Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&family=Exo+2:wght@200;300;400;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-scanline"></div>
+  <div class="loader-logo">Y.MOGAHED</div>
+  <div class="loader-bar-wrap"><div class="loader-bar" id="loader-bar"></div></div>
+  <div class="loader-pct" id="loader-pct">INITIALIZING... 0%</div>
+</div>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+<div class="cursor-trail" id="cursor-trail"></div>
+
+<canvas id="neural-canvas"></canvas>
+<div class="halftone"></div>
+<div class="scanlines"></div>
+<div class="vignette"></div>
+
+<!-- NAV -->
+<nav id="main-nav">
+  <div class="nav-logo">Y<span>.</span>MOGAHED</div>
+  <ul class="nav-links">
+    <li><a href="#about">[ PROFILE ]</a></li>
+    <li><a href="#skills">[ ARSENAL ]</a></li>
+    <li><a href="#experience">[ INTEL ]</a></li>
+    <li><a href="#projects">[ MISSIONS ]</a></li>
+    <li><a href="#certs">[ VAULT ]</a></li>
+    <li><a href="#contact">[ CONNECT ]</a></li>
+  </ul>
+  <div class="nav-status"><div class="status-dot"></div>SYSTEM ONLINE</div>
+</nav>
+
+<div class="page">
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-text">DATA</div>
+  <div class="hero-tag">// EARTH-616 // DATA TERMINAL ENTRY // CAIRO, EGYPT //</div>
+
+  <div class="hero-inner">
+    <div class="ss-wrap">
+      <div class="ss-lines">
+        <div class="ss-line"></div><div class="ss-line"></div><div class="ss-line"></div>
+        <div class="ss-line"></div><div class="ss-line"></div><div class="ss-line"></div>
+        <div class="ss-line"></div><div class="ss-line"></div><div class="ss-line"></div>
+        <div class="ss-line"></div><div class="ss-line"></div><div class="ss-line"></div>
+        <div class="ss-line"></div><div class="ss-line"></div><div class="ss-line"></div>
+        <div class="ss-line"></div>
+      </div>
+      <div class="aura-ring"></div><div class="aura-ring"></div><div class="aura-ring"></div>
+      <div class="hex-frame">
+        <svg class="hex-svg" viewBox="0 0 440 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="220,18 390,118 390,322 220,422 50,322 50,118" stroke="#00E5FF" stroke-width="1.5" stroke-dasharray="14 7" opacity="0.8"/>
+          <polygon points="220,40 364,128 364,312 220,400 76,312 76,128" stroke="#FF1E56" stroke-width="0.9" stroke-dasharray="6 14" opacity="0.55"/>
+          <circle cx="220" cy="18" r="5" fill="#00E5FF" opacity="0.9"/>
+          <circle cx="390" cy="118" r="5" fill="#FF1E56" opacity="0.9"/>
+          <circle cx="390" cy="322" r="5" fill="#00E5FF" opacity="0.9"/>
+          <circle cx="220" cy="422" r="5" fill="#FF1E56" opacity="0.9"/>
+          <circle cx="50" cy="322" r="5" fill="#00E5FF" opacity="0.9"/>
+          <circle cx="50" cy="118" r="5" fill="#FF1E56" opacity="0.9"/>
+          <line x1="220" y1="18" x2="390" y2="118" stroke="rgba(0,229,255,0.12)" stroke-width="0.5"/>
+          <line x1="390" y1="118" x2="390" y2="322" stroke="rgba(255,30,86,0.12)" stroke-width="0.5"/>
+        </svg>
+        <svg class="hex-svg2" viewBox="0 0 440 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="220,62 344,132 344,308 220,378 96,308 96,132" stroke="rgba(0,229,255,0.2)" stroke-width="0.6" stroke-dasharray="4 20" opacity="0.6"/>
+          <circle cx="220" cy="62" r="3" fill="rgba(0,229,255,0.5)"/>
+          <circle cx="344" cy="132" r="3" fill="rgba(255,30,86,0.5)"/>
+          <circle cx="344" cy="308" r="3" fill="rgba(0,229,255,0.5)"/>
+          <circle cx="220" cy="378" r="3" fill="rgba(255,30,86,0.5)"/>
+          <circle cx="96" cy="308" r="3" fill="rgba(0,229,255,0.5)"/>
+          <circle cx="96" cy="132" r="3" fill="rgba(255,30,86,0.5)"/>
+        </svg>
+        <div class="hex-inner">
+          <div class="hex-scan"></div>
+          <img src="Yasser.jpeg" alt="Yasser Ahmed Mogahed">
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right" style="display:flex;flex-direction:column;align-items:center;width:100%;">
+      <div class="hero-name">
+        <span class="glitch" data-text="YASSER">YASSER</span>
+        <span class="glitch hl" data-text="AHMED">AHMED</span>
+        <span class="glitch" data-text="MOGAHED">MOGAHED</span>
+      </div>
+
+      <div class="hero-role-wrap">
+        <span class="typed-role" id="typed-role"></span><span class="typed-cursor"></span>
+      </div>
+
+
+
+      <div class="hero-ctas">
+        <a href="#projects" class="wsb">
+          <div class="wsb-dot"></div>
+          LAUNCH MISSION DATA
+        </a>
+        <a href="#contact" class="wsb2">
+          <div class="wsb-dot"></div>
+          ESTABLISH CONTACT
+        </a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<div class="sec-divider"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="sh reveal">
+    <span class="sh-num">[ 00 ]</span>
+    <h2 class="sh-title">OPERATIVE <span class="b">PROFILE</span></h2>
+    <div class="sh-line"></div>
+  </div>
+  <div class="about-grid">
+    <div class="about-card reveal d1">
+      <div class="about-card-title">// MISSION BRIEF //</div>
+      <div class="about-card-body">
+        Results-driven <strong>Data Scientist &amp; BI Engineer</strong> with 2+ years of project experience designing end-to-end machine learning pipelines, statistical models, NLP classifiers, and production-grade BI platforms. Proficient in <strong>Python, SQL, Power BI, FastAPI, Azure, Docker,</strong> and <strong>MLflow</strong>.<br><br>
+        Proven <strong>team leader</strong> experienced in agile project management, A/B testing, model interpretability, and translating complex datasets into actionable, executive-ready intelligence. Committed to delivering <strong>measurable business impact</strong> through data.
+      </div>
+    </div>
+    <div class="about-card reveal d2">
+      <div class="about-card-title">// OPERATIVE INTEL //</div>
+      <div class="about-card-body">
+        <strong>Degree:</strong> B.Sc. Business Analytics — Egyptian Russian University (GPA: 3.00 | July 2027)<br><br>
+        <strong>Specialization:</strong> Business Technology<br><br>
+        <strong>Major:</strong> Business Analytics<br><br>
+        <strong>Languages:</strong> Arabic (Native) · English (C1) · French (Basic) · Russian (Basic)
+      </div>
+      <div class="stats-row">
+        <div class="stat-box"><span class="stat-num">8+</span><span class="stat-lbl">Projects Shipped</span></div>
+        <div class="stat-box"><span class="stat-num">25+</span><span class="stat-lbl">Team Members Led</span></div>
+        <div class="stat-box"><span class="stat-num">1st</span><span class="stat-lbl">Datathon Place</span></div>
+        <div class="stat-box"><span class="stat-num">100K+</span><span class="stat-lbl">Rows Processed</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sec-divider"></div>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="sh reveal">
+    <span class="sh-num">[ 01 ]</span>
+    <h2 class="sh-title">SKILL <span class="b">ARSENAL</span></h2>
+    <div class="sh-line"></div>
+  </div>
+  <div class="skill-grid">
+    <div class="sc reveal d1">
+      <span class="sc-icon">🕸️</span>
+      <div class="sc-tag">Spider-Sense Prediction Engine</div>
+      <div class="sc-name">DATA SCIENCE & ML</div>
+      <div class="badges">
+        <span class="badge bb">Python</span><span class="badge bb">Scikit-Learn</span><span class="badge bb">XGBoost</span>
+        <span class="badge bb">Random Forest</span><span class="badge bb">ElasticNet</span><span class="badge bb">EDA</span>
+        <span class="badge bb">Feature Engineering</span><span class="badge bb">Optuna</span><span class="badge bb">GridSearchCV</span>
+        <span class="badge bb">NLP / TF-IDF</span><span class="badge bb">Sentiment Analysis</span><span class="badge bb">K-Means / RFM</span>
+        <span class="badge bb">A/B Testing</span><span class="badge bb">MLflow</span><span class="badge bb">Streamlit</span>
+      </div>
+    </div>
+    <div class="sc reveal d2">
+      <span class="sc-icon">📰</span>
+      <div class="sc-tag">The Daily Bugle Dashboard</div>
+      <div class="sc-name">BUSINESS INTELLIGENCE</div>
+      <div class="badges">
+        <span class="badge br">Power BI</span><span class="badge br">Advanced DAX</span><span class="badge br">Star Schema</span>
+        <span class="badge br">Data Modeling</span><span class="badge br">Drill-Through</span><span class="badge br">KPI Design</span>
+        <span class="badge br">Plotly</span><span class="badge br">Seaborn</span><span class="badge br">Matplotlib</span>
+        <span class="badge br">Excel / Power Query</span><span class="badge br">Tableau</span>
+      </div>
+    </div>
+    <div class="sc reveal d3">
+      <span class="sc-icon">⚙️</span>
+      <div class="sc-tag">Web-Shooter Tech</div>
+      <div class="sc-name">ENGINEERING & TOOLS</div>
+      <div class="badges">
+        <span class="badge bb">FastAPI</span><span class="badge bb">Docker</span><span class="badge bb">Azure Cloud</span>
+        <span class="badge bb">ETL Pipelines</span><span class="badge bb">Medallion Architecture</span><span class="badge bb">T-SQL</span>
+        <span class="badge bb">Git / GitHub Actions</span><span class="badge bb">CI/CD</span><span class="badge bb">REST APIs</span>
+        <span class="badge bb">HTML5 / CSS3 / JS</span><span class="badge bb">Flask</span>
+      </div>
+    </div>
+    <div class="sc reveal d4">
+      <span class="sc-icon">🗄️</span>
+      <div class="sc-tag">The Multiverse Vault</div>
+      <div class="sc-name">CORE INFRASTRUCTURE</div>
+      <div class="badges">
+        <span class="badge br">SQL</span><span class="badge br">PostgreSQL</span><span class="badge br">CTEs</span>
+        <span class="badge br">Window Functions</span><span class="badge br">Stored Procedures</span>
+        <span class="badge br">Pandas</span><span class="badge br">NumPy</span><span class="badge br">R</span>
+        <span class="badge br">C++</span><span class="badge br">Jupyter Notebook</span><span class="badge br">VS Code</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sec-divider"></div>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="sh reveal">
+    <span class="sh-num">[ 02 ]</span>
+    <h2 class="sh-title">FIELD <span class="r">INTEL</span></h2>
+    <div class="sh-line"></div>
+  </div>
+  <div class="exp-card reveal">
+    <div class="exp-role">PROJECTS TEAM LEADER — HIGH BOARD</div>
+    <div class="exp-org">// IEEE ERU STUDENT BRANCH · EGYPTIAN RUSSIAN UNIVERSITY //</div>
+    <div class="exp-date">NOV 2025 – PRESENT</div>
+    <ul class="exp-bullets">
+      <li>Selected as <strong>Best Member of the IEEE ERU Projects Team</strong> from the inaugural cohort — recognized for outstanding technical contributions and initiative — and promoted to Team Leader, joining the <strong>High Board</strong> of the IEEE ERU Student Branch.</li>
+      <li>Lead and coordinate a <strong>24-member Projects Committee</strong>, overseeing end-to-end project lifecycles, task delegation, milestone tracking, and technical quality across all branch initiatives at Egyptian Russian University (<strong>ieee-eru.org</strong>).</li>
+    </ul>
+  </div>
+  <div class="exp-card reveal d1">
+    <div class="exp-role">DATA SCIENCE MEMBER — MENTORSHIP</div>
+    <div class="exp-org">// MICROSOFT STUDENT CLUB · KAFR EL SHEIKH UNIVERSITY //</div>
+    <div class="exp-date">FEB 2026 – MAY 2026</div>
+    <ul class="exp-bullets">
+      <li>Participated in <strong>10+ structured training sessions</strong> and <strong>15+ hands-on workshops</strong> covering end-to-end ML pipeline development in Python, Pandas, NumPy, and Scikit-Learn.</li>
+      <li>Cleaned, transformed, and analyzed <strong>3+ real-world datasets</strong>; engineered predictive features and developed classification &amp; regression pipelines with k-fold cross-validation.</li>
+      <li>Improved model accuracy and reinforced clean-code standards through <strong>5+ structured peer code reviews</strong>, demonstrating measurable proficiency in Accuracy, RMSE, and ROC/AUC metrics.</li>
+    </ul>
+  </div>
+</section>
+
+<div class="sec-divider"></div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="sh reveal">
+    <span class="sh-num">[ 03 ]</span>
+    <h2 class="sh-title">MISSION <span class="r">LOGS</span></h2>
+    <div class="sh-line"></div>
+  </div>
+  <div class="proj-grid">
+
+    <!-- FLAGSHIP: OLIST -->
+    <div class="pc flagship reveal">
+      <div class="cbr"></div>
+      <div class="pri-badge"><div class="pri-dot"></div>HIGH PRIORITY // CLASSIFIED</div>
+      <div class="pc-idx">// MISSION FILE :: FLAGSHIP-001 //</div>
+      <h3 class="pc-title">OLIST E-COMMERCE <br><span class="a">BI &amp; ML PLATFORM</span></h3>
+      <p class="pc-desc">Led a <strong>7-member cross-functional team</strong> to architect and deliver a production-grade, end-to-end data analytics and machine learning platform on Brazil's largest marketplace dataset (~100K orders, 9 relational tables). Directed data architecture design, NLP sentiment classification (Logistic Regression + TF-IDF, Optuna-tuned, MLflow-tracked), K-Means RFM customer segmentation, and full-stack web analytics deployment on Azure.</p>
+      <div class="dc">
+        <div class="dc-item"><span class="dc-num">9+</span><span class="dc-lbl">Relational Tables</span></div>
+        <div class="dc-item"><span class="dc-num">~100K</span><span class="dc-lbl">Orders Processed</span></div>
+        <div class="dc-item"><span class="dc-num">5</span><span class="dc-lbl">Customer Personas</span></div>
+      </div>
+      <div class="feat-grid">
+        <div class="feat"><span class="feat-title">⚡ ML Engine</span><div class="feat-text">NLP Sentiment Classifier · Optuna-tuned · MLflow-tracked</div></div>
+        <div class="feat"><span class="feat-title">📊 BI Dashboards</span><div class="feat-text">4 Interactive Power BI Dashboards · Sales, Geo, Customer, Ops</div></div>
+        <div class="feat"><span class="feat-title">🌐 Full-Stack API</span><div class="feat-text">FastAPI REST inference · Docker containerized · Azure hosted</div></div>
+      </div>
+      <div class="tc"><span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">Azure SQL</span><span class="chip">Power BI</span><span class="chip">MLflow</span><span class="chip">Docker</span><span class="chip">T-SQL</span><span class="chip">XGBoost</span><span class="chip">TF-IDF</span><span class="chip">K-Means</span><span class="chip">Optuna</span><span class="chip">HTML/CSS/JS</span></div>
+      <a href="https://github.com/Yasser-Mogahed/Olist_Data_Department" target="_blank" class="cl">⟶ ACCESS MISSION REPOSITORY</a>
+    </div>
+
+    <!-- DATATHON -->
+    <div class="pc reveal d2">
+      <div class="cbr"></div>
+      <div class="award-badge">🏆 1ST PLACE — DATATHON COMPETITION</div>
+      <div class="pc-idx">// MISSION FILE :: OPS-005 //</div>
+      <h3 class="pc-title">BANK ANALYTICS<br><span class="a">DATATHON — 1ST PLACE</span></h3>
+      <p class="pc-desc">Led a <strong>4-member team to 1st place</strong> in a college-level Bank Analytics Datathon competition. Served as team leader and <strong>sole full-stack developer</strong> — independently designed and built the entire competition website from scratch. Conducted end-to-end banking data analysis including <strong>customer segmentation, churn prediction,</strong> and KPI visualization under competition conditions.</p>
+      <div class="tc"><span class="chip">Python</span><span class="chip">HTML/CSS/JS</span><span class="chip">Churn Prediction</span><span class="chip">Customer Segmentation</span><span class="chip">EDA</span></div>
+      <a href="https://github.com/Yasser-Mogahed/El_Farghaly_Bros." target="_blank" class="cl">⟶ VIEW SOURCE CODE</a>
+    </div>
+
+    <!-- CAR RESALE -->
+    <div class="pc reveal d1">
+      <div class="cbr"></div>
+      <div class="pc-idx">// MISSION FILE :: OPS-002 //</div>
+      <h3 class="pc-title">CAR RESALE PRICE<br><span class="a">PREDICTION & MARKET INTEL</span></h3>
+      <p class="pc-desc">Led a <strong>5-person team</strong> to design and deliver a production-ready vehicle price prediction system trained on <strong>16,733 real-world car listings</strong>. Applied feature engineering (10+ features), Box-Cox transformation, and hyperparameter tuning — achieving <strong>R² of 0.8244</strong> with Random Forest (+22.6% improvement over ElasticNet baseline). Deployed a <strong>3-page Streamlit dashboard</strong> with a real-time AI Price Predictor.</p>
+      <div class="tc"><span class="chip">Python</span><span class="chip">Scikit-Learn</span><span class="chip">Random Forest</span><span class="chip">ElasticNet</span><span class="chip">Streamlit</span><span class="chip">Feature Engineering</span></div>
+      <a href="https://github.com/Yasser-Mogahed/Car_Sales_Regression_Analysis" target="_blank" class="cl">⟶ VIEW SOURCE CODE</a>
+    </div>
+
+    <!-- MAVEN MARKET -->
+    <div class="pc reveal d1">
+      <div class="cbr"></div>
+      <div class="pc-idx">// MISSION FILE :: OPS-004 //</div>
+      <h3 class="pc-title">MAVEN MARKET<br><span class="a">BI INTELLIGENCE REPORT</span></h3>
+      <p class="pc-desc">Engineered a <strong>3-page Power BI KPI dashboard</strong> with 8+ custom DAX measures, drill-through navigation, and dynamic slicers for a multi-national retail chain spanning <strong>5+ countries and 3 product categories</strong>. Identified the 3 highest-impact root causes of missed revenue targets — reducing ad-hoc reporting requests by <strong>50%</strong> and saving ~10 analyst hours per month.</p>
+      <div class="tc"><span class="chip">Power BI</span><span class="chip">Advanced DAX</span><span class="chip">Data Modeling</span><span class="chip">Star Schema</span><span class="chip">Drill-Through</span></div>
+      <a href="https://github.com/Yasser-Mogahed/AMIT_Maven_Market" target="_blank" class="cl">⟶ VIEW SOURCE CODE</a>
+    </div>
+
+    <!-- MSC ML PROJECT -->
+    <div class="pc reveal d2">
+      <div class="cbr"></div>
+      <div class="pc-idx">// MISSION FILE :: OPS-006 //</div>
+      <h3 class="pc-title">MSC GRADUATION<br><span class="a">ML PROJECT — PERFECT SCORE</span></h3>
+      <p class="pc-desc">Independently designed and delivered a <strong>complete end-to-end ML project</strong> as the solo capstone for the Microsoft Student Club Data Science program — officially graduating with a <strong>perfect mark</strong>. Applied supervised learning, classification, regression, and model evaluation (Accuracy, RMSE, ROC/AUC) with structured data preprocessing and cross-validation strategies.</p>
+      <div class="tc"><span class="chip">Python</span><span class="chip">Scikit-Learn</span><span class="chip">Pandas</span><span class="chip">NumPy</span><span class="chip">Cross-Validation</span><span class="chip">ROC/AUC</span></div>
+      <a href="https://github.com/Yasser-Mogahed/MSC-ML-Project" target="_blank" class="cl">⟶ VIEW SOURCE CODE</a>
+    </div>
+
+    
+
+  </div>
+</section>
+
+<div class="sec-divider"></div>
+
+<!-- CERTS -->
+<section id="certs">
+  <div class="sh reveal">
+    <span class="sh-num">[ 04 ]</span>
+    <h2 class="sh-title">THE <span class="b">VAULT</span></h2>
+    <div class="sh-line"></div>
+  </div>
+  <div class="certs-wrap reveal">
+    <div class="certs-track" id="certs-track">
+      <div class="cert"><div class="cert-corner"></div><span class="cert-icon">🏆</span><div class="cert-iss">Datathon Competition</div><div class="cert-title">1st Place — Bank Analytics Data Science Track</div><div class="cert-yr">// 2024 //</div></div>
+      <div class="cert"><div class="cert-corner"></div><span class="cert-icon">📊</span><div class="cert-iss">AMIT Learning</div><div class="cert-title">Data Analysis Diploma "99% Score"</div><div class="cert-yr">// OCT 2025 – FEB 2026 //</div></div>
+      <div class="cert"><div class="cert-corner"></div><span class="cert-icon">🏢</span><div class="cert-iss">Microsoft Student Club</div><div class="cert-title">Data Science Program — Perfect Score Graduate</div><div class="cert-yr">// 2026 //</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="sec-divider"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="sh reveal">
+    <span class="sh-num">[ 05 ]</span>
+    <h2 class="sh-title">MULTIVERSE <span class="r">CONNECT</span></h2>
+    <div class="sh-line"></div>
+  </div>
+  <div class="contact-grid reveal">
+    <a href="https://linkedin.com/in/yasser-mogahed" target="_blank" class="cb li">
+      <div class="cb-icon">🔗</div><div class="cb-lbl">Network Core</div><div class="cb-title">LINKEDIN</div>
+    </a>
+    <a href="https://github.com/Yasser-Mogahed" target="_blank" class="cb gh">
+      <div class="cb-icon">⌨️</div><div class="cb-lbl">Source Code Bank</div><div class="cb-title">GITHUB</div>
+    </a>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ymogahed2004@gmail.com" class="cb gm">
+      <div class="cb-icon">📡</div><div class="cb-lbl">Secure Comms</div><div class="cb-title">GMAIL</div>
+    </a>
+    <a href="https://wa.me/201027889639" target="_blank" class="cb wa">
+      <div class="cb-icon">💬</div><div class="cb-lbl">⚡ Direct Hotline ⚡</div><div class="cb-title">WHATSAPP</div>
+    </a>
+  </div>
+  <div style="display:flex;justify-content:center;margin-top:40px;" class="reveal">
+    <a href="Yasser_CV.pdf" download="Yasser_Ahmed_Mogahed_CV.pdf" class="cv-btn">
+      <div class="cv-btn-ico">⬇</div>
+      <div class="cv-btn-txt">ACCESS CV.PDF // SECURE DOWNLOAD</div>
+    </a>
+  </div>
+</section>
+
+</div><!-- end page -->
+
+<footer>
+  <p>// SPIDER-TERMINAL // YASSER AHMED MOGAHED // DATA SCIENTIST <span>♦</span> BI ENGINEER // CAIRO, EGYPT // 2026 //</p>
+  <p style="margin-top:12px;font-family:var(--font-mono);font-size:.65rem;color:rgba(200,215,240,.35);letter-spacing:3px;">
+    &copy; 2026 <span style="color:var(--crimson2);">YASSER MOGAHED</span>. ALL RIGHTS RESERVED.
+  </p>
+</footer>
+
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
